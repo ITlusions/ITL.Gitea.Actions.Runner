@@ -67,4 +67,4 @@ act_runner:
   token: "xIPf1inRRkz2In4f5wFmsUgDL5RAlgoTbckJj3va"
   labels:
     - "ManagedUbuntu:docker://ubuntu:24.04"
-    - "ManagedDocker:catthehacker/ubuntu:full-latest"
+    - "ManagedDocker:docker://catthehacker/ubuntu:full-latest"
