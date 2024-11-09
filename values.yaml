@@ -63,7 +63,7 @@ affinity: {}
 
 act_runner:
   storageclass: "openebs-localhostpath"
-  instance: "https://git.dev.itusions.nl"
+  instance: "https://git.dev.itlusions.nl"
   token: "xIPf1inRRkz2In4f5wFmsUgDL5RAlgoTbckJj3va"
   labels:
     - "ubuntu-latest:docker://node:16-bullseye"
