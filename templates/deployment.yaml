@@ -57,6 +57,7 @@ spec:
         - name: act-runner-dind
           securityContext:
             privileged: true
+            allowPrivilegeEscalation: true
           image: docker:23.0.0-dind
           imagePullPolicy: IfNotPresent
           env:
