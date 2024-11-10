@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "act_runner.fullname" . }}-daemon-config
+data:
+  daemon.json: |
+    { "insecure-registries": ["https://git.dev.itlusions.com"] }
