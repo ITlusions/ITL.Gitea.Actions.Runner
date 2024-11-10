@@ -28,7 +28,7 @@ podAnnotations: {}
 podSecurityContext: {}
   # fsGroup: 2000
 
-securityContext: []
+securityContext: {}
   # privileged: true
   # allowPrivilegeEscalation: true
   # capabilities:
