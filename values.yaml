@@ -8,7 +8,7 @@ image:
   repository: gitea/act_runner
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "nightly-dind-rootless"
+  tag: "0.2.11-dind-rootless"
 
 imagePullSecrets: []
 nameOverride: ""
