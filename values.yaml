@@ -5,10 +5,10 @@
 replicaCount: 1
 
 image:
-  repository: gitea/act_runner
+  repository: catthehacker/ubuntu
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "0.2.11-dind-rootless"
+  tag: "runner-latest"
 
 imagePullSecrets: []
 nameOverride: ""
