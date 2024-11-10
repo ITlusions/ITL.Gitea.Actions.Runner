@@ -55,8 +55,6 @@ spec:
             - name: {{ include "act_runner.fullname" . }}-pvc
               mountPath: /data
         - name: act-runner-dind
-          securityContext:
-            privileged: true
           image: docker:latest-dind
           imagePullPolicy: Always
           env:
