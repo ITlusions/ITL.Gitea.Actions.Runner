@@ -25,10 +25,11 @@ serviceAccount:
 
 podAnnotations: {}
 
-podSecurityContext:
-  privileged: true
+podSecurityContext: {}
+  # fsGroup: 2000
 
-securityContext: {}
+securityContext:
+  privileged: true
   # capabilities:
   #   drop:
   #   - ALL
