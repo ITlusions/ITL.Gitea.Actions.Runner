@@ -54,21 +54,7 @@ spec:
               mountPath: /shared
             - name: {{ include "act_runner.fullname" . }}-pvc
               mountPath: /data
-        - name: act-runner-dind
-          securityContext:
-            privileged: true
-            allowPrivilegeEscalation: true
-          image: docker:23.0.0-dind
-          imagePullPolicy: IfNotPresent
-          env:
-            - name: DOCKER_DRIVER
-              value: "overlay2"
-            - name: DOCKER_TLS_CERTDIR
-              value: ""
-          volumeMounts:
-            - name: docker-data
-              mountPath: /shared
-      volumes:
+        volumes:
         - name: docker-data
           emptyDir:
         - name: {{ include "act_runner.fullname" . }}-pvc
