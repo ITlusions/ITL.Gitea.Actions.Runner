@@ -8,7 +8,7 @@ image:
   repository: catthehacker/ubuntu
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "runner-latest"
+  tag: "act-latest"
 
 imagePullSecrets: []
 nameOverride: ""
