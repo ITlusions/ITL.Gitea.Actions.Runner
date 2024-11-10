@@ -57,7 +57,7 @@ spec:
         - name: act-runner-dind
           securityContext:
             privileged: true
-          image: docker:latest-dind
+          image: docker:27.3-dind
           imagePullPolicy: Always
           env:
             - name: DOCKER_TLS_CERTDIR
