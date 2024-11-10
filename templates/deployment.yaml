@@ -54,7 +54,18 @@ spec:
               mountPath: /shared
             - name: {{ include "act_runner.fullname" . }}-pvc
               mountPath: /data
-        volumes:
+        - name: act-runner-dind
+          securityContext:
+            privileged: true
+          image: docker:latest-dind
+          imagePullPolicy: Always
+          env:
+            - name: DOCKER_TLS_CERTDIR
+              value: ""
+          volumeMounts:
+            - name: docker-data
+              mountPath: /shared
+      volumes:
         - name: docker-data
           emptyDir:
         - name: {{ include "act_runner.fullname" . }}-pvc
